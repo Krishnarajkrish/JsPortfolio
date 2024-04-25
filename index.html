@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishnaraj-Portfolio</title>
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Logo -->
+    <link rel="icon" href="Assets/DevLogo.png" />
+    <!-- Font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Remix Icon CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Mail JS CDN -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+   </script>
+    <!-- Aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Typed js animation -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+<!--Navigation bar  -->
+    <nav>
+        <div class="navContent">
+          <div class="logo"><a href="#" id="toggleTheme"><i class="fa-solid fa-record-vinyl"></i> Portfolio</a></div>
+          <label for="check" class="checkbox">
+            <i class="ri-menu-line"></i>
+          </label>
+          <input type="checkbox" name="check" id="check" />
+          <ul>
+            <li><a href="#About">About</a></li>
+            <li><a href="#MySkills">Skills</a></li>
+            <li><a href="#MyProjects">Projects</a></li>
+            <li><a href="#ContactME">Contact</a></li>
+            <li><a href="#Footer">Social</a></li>
+          </ul>
+        </div>
+      </nav>
+<!--Home Section  -->
+      <section class="section" id="About">
+        <div class="sectionContainer">
+          <div class="content" data-aos="fade-up"
+          data-aos-duration="3000">
+            <p class="subtitle">HELLO</p>
+            <h1 class="title">
+              I'm <span>KrishnaRaj<br />a</span> 
+              <span id="element"></span>
+            </h1>
+            <p class="description">
+              Welcome to my web developer portfolio! I'm Krishnaraj, a skilled and
+              creative web developer with a passion for creating beautiful,
+              responsive, and user-friendly websites. I've worked on a variety of
+              web projects, ranging from personal blogs to e-commerce platforms.
+            </p>
+            <div class="actionBtns">
+             <a href="https://drive.google.com/file/d/1aUXjxeGGHzlYgqWjV-870Qwyw4F-wXSA/view?usp=sharing" target="_blank">
+              <button class="hireMe">Hire Me</button>
+             </a> 
+             <a href="https://github.com/Krishnarajkrish/" target="_blank">
+              <button class="portfolio">GitHub</button>
+             </a>
+            </div>
+          </div>
+          <div class="image" data-aos="fade-up"
+          data-aos-duration="3000">
+            <img src="Assets/HeroImage.png" alt="profile" />
+          </div>
+        </div>
+      </section>
+<!--Skills  -->
+<section id="MySkills">
+<div class="gridLayout"> 
+  <Container class="SkillsSection">
+    <Wrapper class="SkillsSectionWrapper">
+      <h2 data-aos="fade-up"
+      data-aos-duration="3000">Skills</h2>
+      <p data-aos="fade-up"
+      data-aos-duration="3000">Here are some of my skills on which I have been learning for the past 5 years.
+      </p>
+      <SkillsContainer id="Skills">
+          <!-- Skills from JS  -->
+      </SkillsContainer>
+    </Wrapper>
+  </Container>
+</div>
+</section>
+<!--projects  -->
+<section id="MyProjects">
+  <div class="gridLayout">
+    <div id="projects">
+      <div class="ProjectSection">
+        <h2 data-aos="fade-up"
+        data-aos-duration="3000">Projects</h2>
+        <p data-aos="fade-up"
+        data-aos-duration="3000">I have worked on a wide range of projects in web apps. Here are some of my projects.</p>
+        <div id="toggleButtonGroup" data-aos="fade-up"
+        data-aos-duration="3000">
+          <button class="active" value="all" onclick="setToggle('all')" id="ButtonOne">All</button>
+          <span></span>
+          <button value="HTMLCSS" onclick="setToggle('HTMLCSS')" id="ButtonTwo">HTML CSS</button>
+          <span></span>
+          <button value="JavaScript" onclick="setToggle('JavaScript')" id="ButtonThree">JavaScript</button>
+          <span></span>
+          <button value="MERNStack" onclick="setToggle('MERNStack')" id="ButtonFour">MERN</button>
+         </div>
+       </div>
+          <div id="cardContainer" data-aos="fade-up"
+          data-aos-duration="3000">
+            <!-- Cards From JS -->
+          </div>
+     </div>
+  </div>
+</section>
+<!-- Contact -->
+<section id="ContactME">
+ <div class="gridLayout">
+    <div class="contactSection">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me for any questions or opportunities!</p>
+      <div class="contactDetailsContainer"> 
+        <div class="contactDetails">
+            <h3>Email Me <i class="fa-solid fa-rocket"></i></h3>
+            <input type="email" placeholder="Your Email" id="from_email">
+            <input type="text" placeholder="Your Name" id="from_name">
+            <input type="text" placeholder="Subject" id="subject">
+            <textarea  rows="5" placeholder="Message" id="message"></textarea>
+            <button id="button">Submit</button>
+            <!-- Pop up msg -->
+            <div id="popupContainer" class="popupContainer">
+              <div class="popupContent">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <p><i class="fa-solid fa-circle-check"></i> Email Sent Successfully</p>
+              </div>
+            </div>
+          </div> 
+        </div>
+    </div>
+ </div>
+</section>
+<!-- Footer section -->
+<footer id="Footer">
+       <div class="gridLayout">
+             <div class="footersection">
+                <h2>Krishna Raj</h2>
+                <ol>
+                  <li><a href="#About">About</a></li>
+                  <li><a href="#MySkills">Skills</a></li>
+                  <li><a href="#MyProjects">Projects</a></li>
+                  <li><a href="#ContactME">Contact</a></li>
+                  <li><a href="#Footer">Social</a></li>
+                </ol>
+                <div class="SocialIcons">
+                 <a href="https://www.linkedin.com/in/krishna-raj-02a032218/" target="_blank"><i class="fa-brands fa-linkedin"></i></a> 
+                 <a href="https://www.instagram.com/iamkrish.d/" target="_blank"><i class="fa-brands fa-instagram"></i></a> 
+                 <a href="https://www.facebook.com/profile.php?id=100024781939239&mibextid=kFxxJD" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                 <a href="https://x.com/Krishna49587419?t=rY59w5T4o5QN7q85GhH-Mw&s=09" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="CopyRights" >
+                 <h4 >&copy; 2024 Krishna Raj. All rights reserved.</h4>
+                </div>
+             </div>
+       </div>
+</footer>
+<!-- Javascript File Link -->
+    <script src="script.js"></script>
+</body>
+</html>
