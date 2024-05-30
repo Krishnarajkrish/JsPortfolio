@@ -571,6 +571,9 @@ ol li a:hover {
 .fa-linkedin:hover,.fa-instagram:hover,.fa-square-facebook:hover,.fa-twitter:hover{
   color: var(--secondary-color);
 }
+.CopyRights{
+  text-align: center;
+}
 
 /* Floating animation */
 .image img {

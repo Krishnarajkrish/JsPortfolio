@@ -178,6 +178,19 @@ const projects = [
     webapp: "https://vridhi.developers141.com/",
   },
   {
+    id: 14,
+    title: "Rogue Dynamics",
+    date: "April 2024 - April 2024",
+    description:
+    "Rogue Dynamics is the Spare products selling and customize your cars. The epitome of automotive exhilaration, designed for speed, precision, and dynamic performance !",
+    image:
+      "https://portfolioprojects.developers141.com/RogueDynamics.png",
+    tags: ["HTML", "CSS", "JavaScript"],
+    category: "JavaScript",
+    github: "https://github.com/Krishnarajkrish/roguedynamics",
+    webapp: "https://roguedynamics.developers141.com/",
+  },
+  {
     id: 7,
     title: "Shopping Website",
     date: "Feb 2024 - Feb 2024",
